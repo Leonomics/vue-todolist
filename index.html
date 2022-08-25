@@ -6,15 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo List</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=VT323&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js"></script>
 </head>
 <body>
         <main>
+            <header class="container">
+                <h1 class="title">Todo List</h1>
+            </header>
             <div id="app">
                 <div class="container new-todo__wrapper">
-                    <input type="text">
-                    <input type="button" value="Aggiungi">
+                    <input type="text" v-model="newTodo" placeholder="Fare click per aggiungere">
+                    <input type="button" value="Aggiungi" @click="addToDo">
                 </div>
+                <div class="container">
                     <ul class="todoList">
                         <li v-for="(todo,index) in todos"
                         :class="[todo.done ? 'done' : '',classiTodos]">
@@ -22,8 +29,6 @@
                             <i @click="toggleDoneOf(todo)"></i>
                         </li>
                     </ul>
-                <div>
-
                 </div>
             </div>
         </main>

@@ -7,6 +7,33 @@
 img{
     max-width: 100%;
 }
+
+html{
+    font-family: 'Roboto', sans-serif;
+    /*font-family: 'VT323', monospace;*/
+}
+
+.title{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.new-todo__wrapper{
+    padding-bottom: 0.5rem;
+}
+
+ul, ol, menu{
+    list-style: none;
+}
+
 .container{
-    
+    max-width: 500px;
+    margin:0 auto;
+}
+
+.todo{
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border: 2px solid black;
 }

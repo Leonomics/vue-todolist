@@ -34,7 +34,7 @@ const app = new Vue({
 
             if(!this.newTodo) return
 
-            this.tosos.push({
+            this.todos.push({
                 text: this.newTodo,
                 done: false,
             })
