@@ -49,4 +49,3 @@ const done = false
 
 const tasks = [done ? 'done' : '', 'todo', 'altra-classe' ]
 
-console.log(tasks)
