@@ -18,6 +18,10 @@ html{
     padding-bottom: 0.5rem;
 }
 
+.striked_text{
+    text-decoration-line: line-through;
+}
+
 .new-todo__wrapper{
     padding-bottom: 0.5rem;
 }

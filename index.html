@@ -24,6 +24,7 @@
                 <div class="container">
                     <ul class="todoList">
                         <li v-for="(todo,index) in todos"
+                        :class="[todo.done ? 'done' : '',classiTodos]"
                         :class="[todo.done ? 'done' : '',classiTodos]">
                             {{todo.text}}
                             <i @click="toggleDoneOf(todo)"></i>

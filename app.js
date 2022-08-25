@@ -1,19 +1,19 @@
 const todos = [
     {
         text:'Fare la doccia',
-    todo:false,
+        done:false,
     },
     {
         text:'Fare la spesa',
-    todo:false,
+        done:false,
     },
     {
         text:'Mangiare',
-    todo:false,
+        done:false,
     },
     {
         text:'Buttare la spazzatura',
-    todo:false,
+        done:false,
     },
 ]
 
@@ -38,6 +38,9 @@ const app = new Vue({
                 text: this.newTodo,
                 done: false,
             })
+        },
+        toggleStrike(strike){
+           // strike.
         }
     }
 })
